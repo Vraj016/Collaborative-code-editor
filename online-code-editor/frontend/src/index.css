@@ -1,0 +1,56 @@
+/* Ensure full-screen layout */
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  color: rgba(255, 255, 255, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container: Stretch to full-screen */
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1a1a1a;
+  padding: 10px;
+}
+
+/* Title Input */
+input {
+  width: 40%;
+  max-width: 800px;
+  padding: 10px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Full-Screen Code Editor */
+.code-editor {
+  width: 90vw; /* Takes up full width */
+  height: 80vh; /* Takes up full height */
+  border: 2px solid #646cff;
+  border-radius: 10px;
+  background-color: black;
+  color: #00ff00;
+  font-family: monospace;
+  padding: 10px;
+  overflow: auto;
+}
+
+/* Button */
+button {
+  width: 250px;
+  padding: 12px;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
